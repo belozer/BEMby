@@ -7,24 +7,24 @@ _Для работы BEMby необходим js-фреймворк jQuery._
 
 ## API
 Объявление блока
-```
+```js
 var Page = new BEMby('page');
 // jQuery: var Page = $('.page');
 ```
 
 Объявление блока внутри определённого селектора
-```
+```js
 var Player = new BEMby('page', $('.page'));
 ```
 
 Установка модификтора .setMod()
-```
+```js
 Page.setMod('loading', 'display');
 // jQuery: Page.addClass('page__loading_display');
 ```
 
 Удаление модификатора .delMod()
-```
+```js
 Page.delMod('loading');
 // jQuery: Page.removeClass('page__loading_display');
 ```
@@ -32,13 +32,13 @@ Page.delMod('loading');
 ### Работа с элементами
 
 Доступ к элементу
-```
+```js
 Page.elem('content');
 // jQuery: Page.find('.page__content');
 ```
 
 Если необходимо, то можно уточнять поиск элемента (для вложенных элементов).  Данный подход не рекомендуется использовать без необходимости.
-```
+```js
 Player.elem('wrapper).elem('audio');
 // jQuery: Player.find('.player__wrapper').find('.player__audio');
 ```
