@@ -14,7 +14,7 @@ var Page = new BEMby('page');
 
 Объявление блока внутри определённого селектора
 ```js
-var Player = new BEMby('page', $('.page'));
+var Player = new BEMby('player', $('.page'));
 ```
 
 Установка модификтора .setMod()
