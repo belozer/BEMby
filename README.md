@@ -39,7 +39,7 @@ Page.elem('content');
 
 Если необходимо, то можно уточнять поиск элемента (для вложенных элементов).  Данный подход не рекомендуется использовать без необходимости.
 ```js
-Player.elem('wrapper).elem('audio');
+Player.elem('wrapper').elem('audio');
 // jQuery: Player.find('.player__wrapper').find('.player__audio');
 ```
 
